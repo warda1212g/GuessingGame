@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <style>
+
+        .container{
+            width: 800px;
+            height: 700px;
+            margin: auto auto auto auto;
+            background-color: gray;
+            color: white;
+            /* padding-left: 200px; */
+            text-align: center;
+        }
+        .new{
+            background-color: whitesmoke;
+            width: 200px;
+            height: 50px;
+        }
+        .guessSubmit{
+            width: 150px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            margin-top: 10px;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body style="background-color: #212121; color: #fff;">
+     <div class="container">
+
+        <h2>NUMBER GUESSING GAME</h2>
+        
+        <p>Try and guess the number between 1 and 100</p>
+        <p>You have ten attempts to guess the right Number</p>
+
+        
+
+        <form class="form">
+            <label for="guessfeild" id="guess">Guess a number</label><br><br>
+            <input type="text" id="guessfeild" class="guessfeild" placeholder="Enter a Number"><br><br>
+            <input type="submit" class="guessSubmit" id="subt" value="Submit Guess">
+        </form>
+
+        <div class="resultpara">
+            <h3>Previous guesses <span class="guesses"></span></h3>
+            <h3>Remaining  guesses <span class="LastResult">10</span></h3>
+            <p class="LoworHi"></p>
+        </div>
+        <script src="main.js"></script>
+     </div>
+</body>
+</html>
